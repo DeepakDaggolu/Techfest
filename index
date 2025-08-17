@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techfest - Simple Animation</title>
+    <style>
+        /* Set background gradient for the whole page */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #8fd3f4 0%, #84fab0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main container for the content */
+        .container {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+            padding: 40px 24px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        /* Simple bouncing ball animation */
+        .ball {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px auto;
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            border-radius: 50%;
+            animation: bounce 1.3s infinite alternate;
+        }
+
+        @keyframes bounce {
+            to { transform: translateY(-40px);}
+        }
+
+        .title {
+            font-size: 2em;
+            color: #5961f9;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.05em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            color: #5f5f5f;
+            font-style: italic;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+        <div class="title">Techfest Hero Animation</div>
+        <div class="subtitle">
+            Welcome to the tech zone! Watch the ball bounce with pure CSS.
+        </div>
+        <div class="quote">
+            "Be the developer who fuels the engine of Asia’s biggest tech movement."
+        </div>
+    </div>
+</body>
+</html>
